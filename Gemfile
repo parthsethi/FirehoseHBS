@@ -35,6 +35,7 @@ end
 gem 'simple_form'
 gem "twitter-bootstrap-rails"
 gem 'carrierwave'
+gem "fog", "~> 1.3.1"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
