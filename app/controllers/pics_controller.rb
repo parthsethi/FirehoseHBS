@@ -13,7 +13,7 @@ class PicsController < ApplicationController
 	end
 
 	def create
-
+		# Pic.create(:lesson => 1, ...)
 		@pic = Pic.create(pic_params)
 		redirect_to pics_path
 	end	
@@ -21,7 +21,7 @@ class PicsController < ApplicationController
 	private
 
 	def pic_params
-		params.require(:pic).permit(:lesson, :emotion, :learnt)
+		params.require(:pic).permit(:lesson, :emotion, :learnt, :image)
 	
 	end
 
